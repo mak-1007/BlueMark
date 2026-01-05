@@ -2,16 +2,17 @@
 
 Managing attendance in educational institutions is still largely a manual process, which often leads to inefficiencies, human errors, paperwork burden, difficulty in maintaining past records, and lack of instant access to attendance data.
 
-**BlueMark** is an Android-based attendance management application designed to overcome these challenges by enabling teachers or administrators to mark attendance of all students present in a classroom or designated area with a **single tap using Bluetooth technology**.
+**BlueMark** is an Android-based attendance management application designed to overcome these challenges by enabling teachers or administrators to mark student attendance automatically using **Bluetooth-based proximity detection**.
 
 ---
 
 ## 📌 Project Overview
 
-BlueMark modernizes the traditional attendance system by using **Bluetooth-based proximity detection** along with **GPS validation** to automatically mark student attendance.  
-The system eliminates manual roll calls and provides a **contactless, real-time, and reliable attendance solution** for educational institutions.
+BlueMark modernizes the traditional attendance system by using **Bluetooth Classic** to detect nearby student devices and mark attendance during an active session.
 
-Teachers can start an attendance session, and nearby student devices are detected automatically, ensuring fast and accurate attendance marking.
+The system eliminates manual roll calls and provides a **contactless, fast, and reliable** attendance solution for classrooms and academic environments.
+
+Teachers or administrators can start an attendance session, and nearby student devices are detected automatically, ensuring quick and efficient attendance marking.
 
 ---
 
@@ -20,71 +21,133 @@ Teachers can start an attendance session, and nearby student devices are detecte
 - Identify limitations of manual attendance systems  
 - Design and develop an automated mobile attendance solution  
 - Reduce human errors and paperwork  
-- Enable real-time attendance tracking  
+- Enable faster attendance marking  
 - Improve accuracy, accessibility, and efficiency  
 
 ---
 
 ## ✨ Key Features
 
-- 📡 Bluetooth-based real-time student detection  
-- 📍 GPS validation for location accuracy  
-- 🧑‍🏫 Teacher/Admin-only access  
-- 📊 Live attendance dashboard  
-- 🗂️ Offline & cloud-ready data storage  
-- 🔔 Notifications and attendance history  
-- 🔐 Secure authentication system  
+- 📡 **Bluetooth-based real-time student device detection**
+- 🧑‍🏫 **Teacher/Admin-only access**
+- 📊 **Live attendance view during scanning**
+- 🗂️ **Offline attendance storage using Room Database**
+- 📜 **Attendance history and logs**
+- 🔐 **Permission-secured system (Bluetooth & Location)**
+- 🎨 **Modern UI using Jetpack Compose**
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Programming Language:** Kotlin  
-- **IDE:** Android Studio  
-- **Architecture:** MVVM  
-- **UI Design:** XML Layouts  
-- **Connectivity:** Bluetooth Classic  
-- **Location Services:** GPS (Fused Location Provider)  
-- **Database:** Firebase / RoomDB  
-- **Authentication:** Firebase Authentication  
-- **Version Control:** Git & GitHub  
+### 🔹 Programming Language
+- **Kotlin**
+
+### 🔹 IDE & Build
+- Android Studio  
+- Gradle (Kotlin DSL)
+
+### 🔹 Architecture
+- **MVVM (Model–View–ViewModel)**
+- Repository Pattern
+- Clean Architecture inspired structure
+
+### 🔹 UI Design
+- **Jetpack Compose**
+- Material Design (Material 3)
+- XML-free UI
+
+### 🔹 Connectivity
+- **Bluetooth Classic**
+- Android Bluetooth API
+- BroadcastReceiver for device discovery
+
+### 🔹 Database
+- **Room Database**
+- SQLite (under the hood)
+
+### 🔹 Dependency Injection
+- **Dagger Hilt**
+
+### 🔹 Version Control
+- Git & GitHub
 
 ---
 
 ## ⚙️ System Requirements
 
-### Hardware
-- Minimum: Dual-core Android device, 4GB RAM, 32GB Storage  
-- Recommended: Octa-core device, 6GB+ RAM, 64GB+ Storage  
+### 🔹 Hardware
+- **Minimum:** Android device with Bluetooth support, 4GB RAM  
+- **Recommended:** 6GB+ RAM device for smoother performance  
 
-### Software
+### 🔹 Software
 - Android 12 or above  
 - Android Studio (latest version)  
-- Kotlin, Gradle  
+- Kotlin & Gradle  
 
 ---
 
 ## 🚀 App Workflow
 
 1. Launch the BlueMark app  
-2. Secure login for Teacher/Admin  
+2. Teacher/Admin accesses the app  
 3. Permission confirmation (Bluetooth & Location)  
 4. Start attendance session  
 5. Live Bluetooth scanning begins  
 6. Nearby student devices are detected  
 7. Attendance is marked automatically  
-8. Reports and logs are generated  
+8. Attendance records are stored locally  
+9. Attendance history can be viewed later  
 
 ---
 
 ## 📸 App Screenshots & Demo
 
-> Screenshots are available in the `screenshots/` folder and demonstrate the complete flow:
+Screenshots are available in the **screenshots/** folder and demonstrate the complete application flow:
+
 - Splash Screen  
 - Login & Permission Screens  
+- Permission Confirmation  
 - Home & Dashboard  
+- Dashboard (Before Scanning)  
 - Attendance Scanning (Live Detection)  
-- Reports, Notifications & Profile  
+- Present Students List  
+- Attendance Reports  
+- Notifications & Profile  
+
+---
+
+## 🔮 Future Scope & Enhancements
+
+- **Face Recognition–Based Attendance**
+  - Prevent proxy attendance by verifying physical presence
+  - Head count detection using camera-based face detection
+
+- **Secure Authentication**
+  - Email/OTP-based login
+
+- **Cloud Integration**
+  - Firebase-based cloud backup
+  - Multi-device data synchronization
+
+- **AI-Based Proxy Detection**
+  - Combine Bluetooth + Face Recognition for higher accuracy
+
+- **Advanced Analytics**
+  - Attendance trends and reports
+  - Export data as PDF or Excel
+
+---
+
+## 👨‍💻 Developer
+
+**Aman**  
+Final Year B.Tech (Computer Science & Engineering)  
+Android App Development Project  
+
+---
+
+⭐ If you find this project useful, feel free to star the repository!
 
 <!-- =================== BLUEMARK APP SCREENS (ORDERED FLOW) =================== -->
 
