@@ -81,7 +81,7 @@ Teachers or administrators can start an attendance session, and nearby student d
 - **Recommended:** 6GB+ RAM device for smoother performance  
 
 ### 🔹 Software
-- Android 12 or above  
+- Android 
 - Android Studio (latest version)  
 - Kotlin & Gradle  
 
